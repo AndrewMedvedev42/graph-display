@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
-import Plot from 'react-plotly.js';
 import {
     XAxis,
     YAxis,
     CartesianGrid,
     Line,
     Label,
-    Bar,
     Tooltip,
     Legend,
     LineChart,
@@ -50,7 +48,7 @@ export const Stock = () => {
             <div className="content">
                 <ResponsiveContainer width="100%" height={500}>
                 <LineChart margin={{top:20, right:30, bottom:30, left:30}} width={500} height={350} data={stockData}>
-                    <XAxis dataKey="date">
+                    <XAxis dataKey="date2">
                         <Label value="Date" position="bottom" />
                     </XAxis>
                     <YAxis>
