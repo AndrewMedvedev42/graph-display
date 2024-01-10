@@ -30,7 +30,6 @@ export const Stock = () => {
                     DHHNGSP:item.value,
                     date:item.date,
                     GASREGCOVW:data[1].data[index].value,
-                    date2:data[1].data[index].date,
                 })).reverse()
                 setStockData(dataAll)
             })
@@ -67,8 +66,8 @@ export const Stock = () => {
                 </LineChart>
                 </ResponsiveContainer>
                 <div className="stats">
-                    <StatsBox title="DHHNGSP" list={stockData} date="date"/>
-                    <StatsBox title="GASREGCOVW" list={stockData} date="date2"/>
+                    <StatsBox title="DHHNGSP" list={stockData}/>
+                    <StatsBox title="GASREGCOVW" list={stockData}/>
                 </div>
             </div>
         </div>

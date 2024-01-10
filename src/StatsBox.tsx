@@ -11,7 +11,7 @@ export const StatsBox = ({title, list, date}:any) => {
                     list?.map((item:any)=>(
                         <tr key={item[title]}>
                             <td>{item[title]}</td>
-                            <td>{item[date]}</td>
+                            <td>{item.date}</td>
                         </tr>
                     ))
                 }
