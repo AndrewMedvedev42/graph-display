@@ -38,9 +38,6 @@ export const Stock = () => {
             })
     }
 
-    console.log(stockData);
-    
-
     return (
         <div className="container">
             <h1>Commodities</h1>
