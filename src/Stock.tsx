@@ -47,7 +47,7 @@ export const Stock = () => {
             <div className="content">
                 <ResponsiveContainer width="100%" height={500}>
                 <LineChart margin={{top:20, right:30, bottom:30, left:30}} width={500} height={350} data={stockData}>
-                    <XAxis dataKey="date2">
+                    <XAxis dataKey="date">
                         <Label value="Date" position="bottom" />
                     </XAxis>
                     <YAxis>
