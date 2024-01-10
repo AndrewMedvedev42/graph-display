@@ -1,4 +1,4 @@
-export const StatsBox = ({title, list}:any) => {
+export const StatsBox = ({title, list, date}:any) => {
     return (
         <div className="statsBox">
             <span className="columnTitle">{title}</span>
@@ -8,10 +8,10 @@ export const StatsBox = ({title, list}:any) => {
                     <th>Date</th>
                 </tr>
                 {
-                    list.map(({value, date}:any)=>(
-                        <tr key={value}>
-                            <td>{value}</td>
-                            <td>{date}</td>
+                    list?.map((item:any)=>(
+                        <tr key={item[title]}>
+                            <td>{item[title]}</td>
+                            <td>{item[date]}</td>
                         </tr>
                     ))
                 }
